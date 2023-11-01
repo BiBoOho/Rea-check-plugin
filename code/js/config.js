@@ -149,15 +149,28 @@ jQuery.noConflict();
       const param = {'app': kintone.app.getId()};
       const field = await kintone.api('/k/v1/preview/app/form/layout', 'GET', param);
       field.layout.forEach((item) => {
-        item.fields.forEach((item2) => {
-          if(item2.type === 'SPACER'){
-            let $opt = $('<option>');
-            $opt.attr('value', item2.elementId);
-            $opt.text(item2.elementId);
-            space_display.append($opt);
-          }
-        });
-      })
+        if(item.type === 'GROUP'){
+          item.layout.forEach((groupItem) => {
+            groupItem.fields.forEach((field) => {
+              if(field.type === 'SPACER'){
+                let $opt = $('<option>');
+                $opt.attr('value', field.elementId);
+                $opt.text(field.elementId);
+                space_display.append($opt);
+              }
+            });
+          });
+        }else{
+          item.fields.forEach((field) => {
+            if(field.type === 'SPACER'){
+              let $opt = $('<option>');
+              $opt.attr('value', field.elementId);
+              $opt.text(field.elementId);
+              space_display.append($opt);
+            }
+          });
+        }
+      });
       showConfig();
       return;
     } catch (error) {

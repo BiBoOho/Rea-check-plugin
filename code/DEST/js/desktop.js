@@ -4,7 +4,7 @@ jQuery.noConflict();
   "use strict";
 
   const config = kintone.plugin.app.getConfig(PLUGIN_ID);
-  if (!Object.keys(config).length === 0) {
+  if (Object.keys(config).length === 0) {
     return;
   }
 
@@ -39,8 +39,7 @@ jQuery.noConflict();
   ];
 
   // Set the read or unread color of the record row on the index show (desktop).
-  kintone.events.on(
-    ["app.record.index.show", "mobile.app.record.index.show"],
+  kintone.events.on(["app.record.index.show", "mobile.app.record.index.show"],
     async function (event) {
       try {
         let getUser = kintone.getLoginUser().code; // Get user login
