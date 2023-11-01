@@ -1,0 +1,116 @@
+.plugin-space-heading {
+  font-size: 1.5rem;
+  margin: 0.8rem;
+}
+
+.plugin-space-message {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0.8rem;
+  margin-top: 0;
+}
+
+/* arrow up icon */
+.gg-arrow-up {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px
+}
+
+.gg-arrow-up::after,
+.gg-arrow-up::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 4px
+}
+
+.gg-arrow-up::after {
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  left: 7px
+}
+
+.gg-arrow-up::before {
+  width: 2px;
+  height: 16px;
+  left: 10px;
+  background: currentColor
+}
+
+/* arrow down icon */
+.gg-arrow-down {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px
+ }
+ 
+ .gg-arrow-down::after,
+ .gg-arrow-down::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 4px
+ }
+ 
+ .gg-arrow-down::after {
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(-45deg);
+  left: 7px
+ }
+ 
+ .gg-arrow-down::before {
+  width: 2px;
+  height: 16px;
+  left: 10px;
+  background: currentColor
+ } 
+
+ /* Popup table on read qty click  */
+.tableFixHead {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.tableFixHead tbody {
+  display: block;
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 320px;
+}
+.tableFixHead thead tr {
+  display: block;
+}
+
+.tableFixHead th,
+.tableFixHead  td {
+  padding: 5px 10px;
+  width: 350px;
+  border: 1px solid black;
+}
+
+.tableFixHead td {
+  border-top: none;
+}
+
+.tableFixHead th{
+  padding: 5px 10px;
+  width: 350px;
+  border: 1px solid rgb(72, 161, 224);
+  background: rgb(72, 161, 224);
+  color: #fff;
+}

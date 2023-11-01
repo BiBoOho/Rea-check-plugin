@@ -1,0 +1,29 @@
+name.ja	既読チェックプラグイン
+name.en	Read check plugin
+name.zh	ສະ​ຫນັບ​ສະ​ຫນູນ plugin ລວມ​
+
+description.ja	既読チェックプラグイン
+description.en	A plug-in that allows you to specify fields to be aggregated, calculation methods, display formats, etc.
+description.zh	ປັ໊ກອິນທີ່ອະນຸຍາດໃຫ້ທ່ານລະບຸຊ່ອງຂໍ້ມູນທີ່ຈະລວບລວມ, ວິທີການຄິດໄລ່, ຮູບແບບການສະແດງ, ແລະອື່ນໆ.
+
+icon	image/read-check-plugin.png
+homepage_url
+
+desktop.js	js/jquery-2.2.4.min.js
+desktop.js	js/sweetalert2.all.js
+desktop.js	common/RsComAPI.js
+desktop.js	js/desktop.js	C
+desktop.css	css/51-modern-default.css
+desktop.css	css/RsComAPI.css
+desktop.css	css/desktop.css	C
+
+config.html	html/config.html
+
+config.js	js/jquery-2.2.4.min.js
+config.js	js/sweetalert2.all.js
+config.js	common/RsComAPI.js
+config.js	js/jqColorPicker.min.js
+config.js	js/config.js	C
+config.css	css/51-modern-default.css
+config.css	css/RsComAPI.css
+config.css	css/config.css	C

@@ -1,0 +1,59 @@
+{
+	"manifest_version": 1,
+	"version": 202310240948,
+	"type": "APP",
+	"name": {
+		"ja": "既読チェックプラグイン",
+		"en": "Read check plugin",
+		"zh": "ສະ​ຫນັບ​ສະ​ຫນູນ plugin ລວມ​"
+	},
+	"description": {
+		"ja": "既読チェックプラグイン",
+		"en": "A plug-in that allows you to specify fields to be aggregated, calculation methods, display formats, etc.",
+		"zh": "ປັ໊ກອິນທີ່ອະນຸຍາດໃຫ້ທ່ານລະບຸຊ່ອງຂໍ້ມູນທີ່ຈະລວບລວມ, ວິທີການຄິດໄລ່, ຮູບແບບການສະແດງ, ແລະອື່ນໆ."
+	},
+	"icon": "image/read-check-plugin.png",
+	"homepage_url": {
+	},
+	"desktop": {
+		"js": [
+			"js/jquery-2.2.4.min.js",
+			"js/sweetalert2.all.js",
+			"common/RsComAPI.js",
+			"js/desktop.min.js"
+		],
+		"css": [
+			"css/51-modern-default.css",
+			"css/RsComAPI.css",
+			"css/desktop.min.css"
+		]
+	},
+	"mobile": {
+		"js": [
+			"js/jquery-2.2.4.min.js",
+			"js/sweetalert2.all.js",
+			"common/RsComAPI.js",
+			"js/desktop.min.js"
+		],
+		"css": [
+			"css/51-modern-default.css",
+			"css/RsComAPI.css",
+			"css/desktop.min.css"
+		]
+	},
+	"config": {
+		"html": "html/config.html",
+		"js": [
+			"js/jquery-2.2.4.min.js",
+			"js/sweetalert2.all.js",
+			"common/RsComAPI.js",
+			"js/jqColorPicker.min.js",
+			"js/config.min.js"
+		],
+		"css": [
+			"css/51-modern-default.css",
+			"css/RsComAPI.css",
+			"css/config.min.css"
+		]
+	}
+}

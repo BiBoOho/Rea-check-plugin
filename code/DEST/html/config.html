@@ -1,0 +1,119 @@
+<body>
+  <!-- ToDo hearder -->
+  <div class="hearder">
+    <div class="inputId kintoneplugin-input-outer">
+      <label class="kintoneplugin-label">Read DB App ID<span class="kintoneplugin-require">*</span></label><br>
+      <input type="text" name="id" class="inputName kintoneplugin-input-text" id="db_id">
+    </div>
+    <div class="apiToken kintoneplugin-input-outer">
+      <label class="kintoneplugin-label">Read DB app API token (<a id="create_api" href="#">Click here to create API token</a>)</label><br>
+      <input type="text" name="apiToken" class="apiToken1 kintoneplugin-input-text" id="api_token">
+    </div>
+    <div class="displaySpace">
+      <div class="kintoneplugin-select-outer">
+        <label class="kintoneplugin-label">Indication</label><br>
+        <div class="indication kintoneplugin-select">
+          <select name="choice_list" class="dropdown-toggle" id="indication_list">
+            <option value="" class="kintoneplugin-dropdown-selected-name">-----</span>
+          </select>
+        </div>
+      </div>
+      <div class="number kintoneplugin-input-outer">
+        <label class="kintoneplugin-label">Read-already-stated Statement <span class="kintoneplugin-require">*</span></label><br>
+        <input type="text" name="number" class="Qtynumber kintoneplugin-input-text">
+      </div>
+    </div>
+    <!-- ToDo hearder -->
+    <!-- todo check popUp  -->
+    <div class="popUpContent kintoneplugin-input-checkbox">
+      <label class="kintoneplugin-label">Pop-Up Content</label>
+      <div class="checkboxChoice">
+        <div class="kintoneplugin-input-checkbox">
+          <div class="checkbox-content">
+            <span class="kintoneplugin-input-checkbox-item">
+              <input id="checkbox-0" class="datetimeCB" name="checkbox" type="checkbox"/>
+              <label for="checkbox-0">Date and time</label>
+            </span>
+            <span class="kintoneplugin-input-checkbox-item">
+              <input id="checkbox-1" class="usernameCB" name="checkbox" type="checkbox"/>
+              <label for="checkbox-1">Username</label>
+            </span>
+            <span class="kintoneplugin-input-checkbox-item">
+              <input id="checkbox-2" class="revisionCB" name="checkbox" type="checkbox"/>
+              <label for="checkbox-2">Revision</label>
+            </span>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <!-- todo check popUp  -->
+    <!-- todo drop and drag -->
+    <div class="dropAndDrag" id="dropAndDrag1"></div>
+    <!-- todo drop and drag -->
+    <!-- todo record update time -->
+    <div class="recordUpdate kintoneplugin-input-checkbox">
+      <label class="kintoneplugin-label">Record Update time</label>
+      <div class="updateTime kintoneplugin-input-checkbox-item">
+        <input type="checkbox" name="recordUpdate" id="checkbox-3" class="recordUpdateCB">
+        <label for="checkbox-3">Reset read data</label>
+      </div>
+    </div>
+    <!-- todo record update time -->
+    <!-- todo Unread record display format -->
+    <div class="unreadPicker">
+      <label class="kintoneplugin-label">Unread record display format</label>
+      <div class="unread">
+        <div class="unreadRecord">
+          <label>Character</label>
+          <div class="colortext">
+            <div class="font-color-picker-unread">
+              <input type="text" id="font-color-picker-unread" class="kintoneplugin-input-text" style="width: 102px;">
+              <div class="color-picker"></div>
+            </div>
+            <svg id="font-color-picker-unread-icon" style="cursor: pointer;" value="#000000" height="40" viewBox="0 -960 960 960" width="40"><path d="M211.593-103.434q-36.08 0-73.685-15.174-37.604-15.174-68.257-51.914 39.522-12 54.805-33.587 15.282-21.587 16.978-61.717 1.696-45.446 34.218-77.484 32.521-32.038 81-32.038 48.478 0 82.087 33.757 33.609 33.758 33.609 81.982 0 68.522-46.609 112.349-46.609 43.826-114.146 43.826Zm.016-70.175q35 0 62.5-25t27.5-61q0-20-12.5-32.5t-32.5-12.5q-20 0-32.5 12.5t-12.5 32.5q0 39-8.5 57.5t-31.5 22.5q6 1 20 3.5t20 2.5Zm241.87-175.869L350.478-457.479l395.218-395.783q14-13.435 31-14.218 17-.782 32 14.218l42.566 42.566q15 15 14.218 32.5-.783 17.5-14.218 31.5L453.479-349.478Zm-196.87 89.869Z"/></svg>
+          </div>
+      </div>
+        <div class="unreadBackground">
+          <label>Background</label>
+          <div class="colorBackground">
+            <div class="bg-color-picker-unread">
+              <input type="text" id="bg-color-picker-unread" class="kintoneplugin-input-text" style="width: 102px;">
+            </div>
+            <svg id="bg-color-picker-unread-icon" style="cursor: pointer;" value="#000000" height="40" viewBox="0 -960 960 960" width="40"><path d="M211.593-103.434q-36.08 0-73.685-15.174-37.604-15.174-68.257-51.914 39.522-12 54.805-33.587 15.282-21.587 16.978-61.717 1.696-45.446 34.218-77.484 32.521-32.038 81-32.038 48.478 0 82.087 33.757 33.609 33.758 33.609 81.982 0 68.522-46.609 112.349-46.609 43.826-114.146 43.826Zm.016-70.175q35 0 62.5-25t27.5-61q0-20-12.5-32.5t-32.5-12.5q-20 0-32.5 12.5t-12.5 32.5q0 39-8.5 57.5t-31.5 22.5q6 1 20 3.5t20 2.5Zm241.87-175.869L350.478-457.479l395.218-395.783q14-13.435 31-14.218 17-.782 32 14.218l42.566 42.566q15 15 14.218 32.5-.783 17.5-14.218 31.5L453.479-349.478Zm-196.87 89.869Z"/></svg>
+          </div>
+        </div>
+    </div>
+    <!-- todo Unread record display format -->
+    <!-- todo read record display format -->
+    <div class="readPicker">
+      <label class="kintoneplugin-label">Read record format</label>
+      <div class="read">
+        <div class="readRecord">
+          <label>Character</label>
+          <div class="readtext">
+            <div class="font-color-picker-read">
+              <input type="text" id="font-color-picker-read" class="kintoneplugin-input-text" style="width: 102px;">
+            </div>
+            <svg id= "font-color-picker-read-icon" style="cursor: pointer;" value="#000000" height="40" viewBox="0 -960 960 960" width="40"><path d="M211.593-103.434q-36.08 0-73.685-15.174-37.604-15.174-68.257-51.914 39.522-12 54.805-33.587 15.282-21.587 16.978-61.717 1.696-45.446 34.218-77.484 32.521-32.038 81-32.038 48.478 0 82.087 33.757 33.609 33.758 33.609 81.982 0 68.522-46.609 112.349-46.609 43.826-114.146 43.826Zm.016-70.175q35 0 62.5-25t27.5-61q0-20-12.5-32.5t-32.5-12.5q-20 0-32.5 12.5t-12.5 32.5q0 39-8.5 57.5t-31.5 22.5q6 1 20 3.5t20 2.5Zm241.87-175.869L350.478-457.479l395.218-395.783q14-13.435 31-14.218 17-.782 32 14.218l42.566 42.566q15 15 14.218 32.5-.783 17.5-14.218 31.5L453.479-349.478Zm-196.87 89.869Z"/></svg>
+          </div>
+        </div>
+        <div class="readBackground">
+          <label>Background</label>
+          <div class="readBackgroundColor">
+            <div class="bg-color-picker-read">
+              <input type="text" id="bg-color-picker-read" class="kintoneplugin-input-text" style="width: 102px;">
+            </div>
+            <svg id="bg-color-picker-read-icon" style="cursor: pointer;" value="#000000" height="40" viewBox="0 -960 960 960" width="40"><path d="M211.593-103.434q-36.08 0-73.685-15.174-37.604-15.174-68.257-51.914 39.522-12 54.805-33.587 15.282-21.587 16.978-61.717 1.696-45.446 34.218-77.484 32.521-32.038 81-32.038 48.478 0 82.087 33.757 33.609 33.758 33.609 81.982 0 68.522-46.609 112.349-46.609 43.826-114.146 43.826Zm.016-70.175q35 0 62.5-25t27.5-61q0-20-12.5-32.5t-32.5-12.5q-20 0-32.5 12.5t-12.5 32.5q0 39-8.5 57.5t-31.5 22.5q6 1 20 3.5t20 2.5Zm241.87-175.869L350.478-457.479l395.218-395.783q14-13.435 31-14.218 17-.782 32 14.218l42.566 42.566q15 15 14.218 32.5-.783 17.5-14.218 31.5L453.479-349.478Zm-196.87 89.869Z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- todo read record display format -->
+  </div>
+  <!-- todo button submit -->
+  <div class="Submit">
+    <button class="kintoneplugin-button-dialog-ok save">Save</button>
+    <button class="kintoneplugin-button-normal cancel">Cancel</button>
+  </div>
+  <!-- todo button submit -->
+</body>
